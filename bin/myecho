@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Or #!/usr/bin/env zsh
+
+echo "Successfully installed $1"

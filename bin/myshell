@@ -1,0 +1,10 @@
+if [[ $SHELL == *"/zsh" ]]; then
+    echo "Using zsh shell"
+    # Commands for zsh shell
+elif [[ $SHELL == *"/bash" ]]; then
+    echo "Using bash shell"
+    # Commands for bash shell
+else
+    echo "Unsupported shell: $SHELL"
+fi
+
