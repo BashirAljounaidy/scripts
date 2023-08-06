@@ -11,7 +11,7 @@ else
 fi
 
 # Add the bin directory to the PATH
-ehco 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
+echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
 
 test $PATH == "echo $HOME/Scripts/bin:$PATH" && echo "Successfully added the bin directory to the PATH" || echo "Failed to add the bin directory to the PATH"
 
