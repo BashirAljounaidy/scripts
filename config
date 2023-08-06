@@ -6,7 +6,6 @@ alias ll='ls -alF'  # List files in long format
 alias ..='cd ..'   # Go up one directory
 alias ...='cd ../..'  # Go up two directories
 alias cls='clear'  # Clear the terminal screen
-alias vi='vim'  # Use vim as default text editor
 alias grep='grep --color=auto'  # Enable colored output for grep
 alias dfh='df -h'  # Show disk space usage in human-readable format
 alias freeh='free -h'  # Show memory usage in human-readable format
@@ -14,10 +13,10 @@ alias psg='ps aux | grep'  # Search for a process using ps and grep
 alias ports='netstat -tuln'  # List all listening ports
 alias topcpu='top -o %CPU'  # Show processes using the most CPU
 alias topmem='top -o %MEM'  # Show processes using the most memory
-alias ipinfo='curl ipinfo.io'  # Get public IP address information
+alias myip='curl ipinfo.io'  # Get public IP address information
 alias getcert='openssl s_client -connect'  # Get SSL certificate details
-alias gitlog='git log --oneline --decorate --graph'  # Show a pretty git log
-
+alias glog='git log --oneline --decorate --graph'  # Show a pretty git log
+alias gclone='git clone $1'
 # Docker Aliases
 alias dc='docker-compose'  # Short alias for docker-compose
 alias dps='docker ps'  # List running containers
