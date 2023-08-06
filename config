@@ -92,3 +92,4 @@ remove_all_with_confirmation() {
         echo "Invalid input. Please enter 'y' to delete or 'n' to abort."
     fi
 }
+alias myname='echo "My name is $USER"'  # Show the current user's username
