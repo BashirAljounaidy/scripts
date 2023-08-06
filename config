@@ -55,8 +55,6 @@ alias ec2stop='aws ec2 stop-instances'  # Stop EC2 instances
 # SSH Aliases
 alias sshkey='cat ~/.ssh/id_rsa.pub'  # Display SSH public key
 
-# Networking Aliases
-alias myip='curl -s https://api64.ipify.org?format=json | jq -r .ip'  # Get public IP address
 
 # Git Aliases
 alias gall='gall_func'
