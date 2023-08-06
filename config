@@ -64,7 +64,12 @@ alias gcm='git commit -m'  # Commit changes with a message
 alias gps='git push'  # Push changes to the remote repository
 alias gpl='git pull'  # Pull changes from the remote repository
 alias gst='git status'  # Show the current status of the repository
-
+alias gitc='gitcom_func'
+gitcom_func() {
+  git add .
+  git commit -m "$1"
+  git push
+}
 # Docker-Compose Aliases
 alias dcu='docker-compose up -d'  # Start all services defined in docker-compose.yml
 alias dcd='docker-compose down'  # Stop and remove all containers defined in docker-compose.yml
