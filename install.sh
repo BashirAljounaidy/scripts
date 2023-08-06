@@ -20,7 +20,7 @@ done
 test -f "$HOME/.$myshell"rc && source "$HOME/.$myshell"rc && echo '."$myshell"rc founded '
 # edits 
 echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
-echo 'source "~/$HOME/Scripts/extend/*"' >> "$HOME/.$myshell"rc
+echo 'source "$HOME/Scripts/extend/*"' >> "$HOME/.$myshell"rc
 
 exec $myshell
 
