@@ -17,7 +17,7 @@ find "$HOME/Scripts/bin" -type f | while read -r file; do
 done
 
 # Add the bin directory to the PATH
-test -f "$HOME/.$myshell"rc && source "$HOME/.$myshell"rc && echo '."$myshell"rc founded ' ||  touch "$HOME/.$myshell"rc && echo '."$myshell"rc created ' || echo '."$myshell"rc not created ' && exit 1
+test -f "$HOME/.$myshell"rc && source "$HOME/.$myshell"rc && echo '."$myshell"rc founded '
 # edits 
 echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
 echo 'source "~/$HOME/Scripts/extend/*"' >> "$HOME/.$myshell"rc
