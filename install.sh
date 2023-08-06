@@ -23,6 +23,6 @@ echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
 echo source "$HOME/Scripts/extend/*" >> "$HOME/.$myshell"rc
 
 #check if it is work 
-command -v myecho >/dev/null && echo "os" || echo "os not found"
+command -v myecho >/dev/null && echo "Scripts installed successfully" || echo "Scripts not found"
 #check if it is work
-command -v os >/dev/null && echo "os" || echo "os not found"
+command -v os >/dev/null && echo "Alias installed successfully" || echo "! Alias not installed"
