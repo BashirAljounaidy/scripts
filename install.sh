@@ -13,14 +13,11 @@ fi
 # Add the bin directory to the PATH
 echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
 
-exec $myshell
-
-test $PATH == "echo $HOME/Scripts/bin:$PATH" && echo "Successfully added the bin directory to the PATH" || echo "Failed to add the bin directory to the PATH"
-
-
 # Make all files in the bin directory executable
-find "/home/$(whoami)/Scripts/bin" -type f | while read -r file; do
+find "$HOME/Scripts/bin" -type f | while read -r file; do
     chmod +x "$file"
 done
 
 echo "All files in the bin directory are now executable"
+
+exec $myshell
