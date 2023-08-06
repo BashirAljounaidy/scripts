@@ -3,8 +3,12 @@
 
 if [[ $SHELL == *"/zsh" ]]; then
     myshell="zsh"
+    cp ~/.zshrc ~/.copy_backup_zshrc
+
 elif [[ $SHELL == *"/bash" ]]; then
     myshell="bash"
+    cp ~/.bashrc ~/.copy_backup_bash
+
 else
     echo "Unsupported shell: $SHELL"
     exit 1

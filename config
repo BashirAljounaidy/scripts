@@ -1,4 +1,5 @@
 # Common DevOps Aliases
+alias rmall='rm -rf .'  # Show git status
 alias h='history'  # Short alias for history
 alias os='uname -a'  # Show operating system information
 alias ll='ls -alF'  # List files in long format
@@ -71,3 +72,21 @@ alias dcd='docker-compose down'  # Stop and remove all containers defined in doc
 
 # Misc Aliases
 alias weather='curl wttr.in'  # Get the weather forecast
+##Remove ALL 
+#!/usr/bin/env bash
+
+# Function to remove all directories and files with confirmation prompt
+alias rmall='remove_all_with_confirmation'
+remove_all_with_confirmation() {
+    echo -n "Are you sure you want to delete all directories and files? (y/n): "
+    read answer
+
+    if [[ "$answer" == "n" || "$answer" == "N" || "$1" == "$HOME"]]; then
+        echo "Deletion aborted."
+    elif [[ "$answer" == "y" || "$answer" == "Y" ]]; then
+        find "$1" -mindepth 1 -delete
+        echo "All directories and files have been deleted."
+    else
+        echo "Invalid input. Please enter 'y' to delete or 'n' to abort."
+    fi
+}
