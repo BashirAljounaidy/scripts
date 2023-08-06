@@ -59,13 +59,8 @@ alias sshkey='cat ~/.ssh/id_rsa.pub'  # Display SSH public key
 alias myip='curl -s https://api64.ipify.org?format=json | jq -r .ip'  # Get public IP address
 
 # Git Aliases
-alias gaa='git add .'  # Add all changes to the staging area
-alias gcm='git commit -m'  # Commit changes with a message
-alias gps='git push'  # Push changes to the remote repository
-alias gpl='git pull'  # Pull changes from the remote repository
-alias gst='git status'  # Show the current status of the repository
-alias gitc='gitcom_func'
-gitcom_func() {
+alias gall='gall_func'
+gall_func() {
   git add .
   git commit -m "$1"
   git push
