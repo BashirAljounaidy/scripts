@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Or #!/usr/bin/env zsh
+
+# Create directories
+mkdir -p config helpers middleware models public/css public/images public/js routes scripts views/error views/layouts views/partials views/stories
+
+# Create empty files
+touch LICENSE app.js package-lock.json package.json readme.md
+touch config/config.env.example config/db.js config/passport.js
+touch helpers/hbs.js middleware/auth.js
+touch models/Story.js models/User.js
+touch public/css/style.css public/js/script.js
+touch routes/auth.js routes/index.js routes/stories.js
+touch scripts/post-install.js
+touch views/dashboard.hbs views/login.hbs
+touch views/error/404.hbs views/error/500.hbs
+touch views/layouts/login.hbs views/layouts/main.hbs
+touch views/partials/_add_btn.hbs views/partials/_header.hbs
+touch views/stories/add.hbs views/stories/edit.hbs views/stories/index.hbs views/stories/show.hbs
+echo "Project structure has been created."
