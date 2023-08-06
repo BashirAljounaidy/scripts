@@ -78,10 +78,17 @@ alias weather='curl wttr.in'  # Get the weather forecast
 # Function to remove all directories and files with confirmation prompt
 alias rmall='remove_all_with_confirmation'
 remove_all_with_confirmation() {
+    # Check if the current working directory is the user's home directory
+    if test $(pwd) = $HOME; then
+    echo "You are in your home directory. Delete Aborted."
+    exit 1
+    else
     echo -n "Are you sure you want to delete all directories and files? (y/n): "
     read answer
+    fi
 
-    if [[ "$answer" == "n" || "$answer" == "N" || "$1" == "$HOME" ]]; then
+
+    if [[ "$answer" == "n" || "$answer" == "N" ]]; then
         echo "Deletion aborted."
     elif [[ "$answer" == "y" || "$answer" == "Y" ]]; then
         find "$1" -mindepth 1 -delete
