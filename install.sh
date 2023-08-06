@@ -17,7 +17,7 @@ find "$HOME/Scripts/bin" -type f | while read -r file; do
 done
 
 # Add the bin directory to the PATH
-test -f "$HOME/.$myshell"rc && source "$HOME/.$myshell"rc
+source "$HOME/.$myshell"rc
 # edits 
 echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
 echo source "$HOME/Scripts/config" >> "$HOME/.$myshell"rc
