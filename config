@@ -1,5 +1,5 @@
 # Common DevOps Aliases
-alias h='history'  # Short alias for history;
+alias h='history'  # Short alias for history
 alias os='uname -a'  # Show operating system information
 alias ll='ls -alF'  # List files in long format
 alias ..='cd ..'   # Go up one directory
@@ -14,7 +14,6 @@ alias ports='netstat -tuln'  # List all listening ports
 alias topcpu='top -o %CPU'  # Show processes using the most CPU
 alias topmem='top -o %MEM'  # Show processes using the most memory
 alias ipinfo='curl ipinfo.io'  # Get public IP address information
-alias serve='python -m SimpleHTTPServer'  # Start a simple HTTP server
 alias getcert='openssl s_client -connect'  # Get SSL certificate details
 alias gitlog='git log --oneline --decorate --graph'  # Show a pretty git log
 
@@ -32,12 +31,10 @@ alias k='kubectl'  # Short alias for kubectl
 alias kgp='kubectl get pods'  # List all pods
 alias ksvc='kubectl get svc'  # List all services
 alias kdep='kubectl get deployment'  # List all deployments
-alias kdesc='kubectl describe'  # Describe a Kubernetes resource
 alias klogs='kubectl logs'  # View logs of a pod
 alias kex='kubectl exec -it'  # Execute a command in a pod
 alias kapp='kubectl apply -f'  # Apply a YAML file to create resources
 alias kdelf='kubectl delete -f'  # Delete resources defined in a YAML file
-alias kportfwd='kubectl port-forward'  # Forward ports to a pod
 
 # Terraform Aliases (requires Terraform installed)
 alias tf='terraform'  # Short alias for terraform
@@ -73,4 +70,4 @@ alias dcu='docker-compose up -d'  # Start all services defined in docker-compose
 alias dcd='docker-compose down'  # Stop and remove all containers defined in docker-compose.yml
 
 # Misc Aliases
-alias weather='curl wttr.in'  # Get the
+alias weather='curl wttr.in'  # Get the weather forecast
