@@ -25,8 +25,8 @@ echo source "$HOME/Scripts/config" >> "$HOME/.$myshell"rc
 source "$HOME/.$myshell"rc
 
 #check if it is work 
-command -v myecho >/dev/null && echo "Scripts installed successfully" || echo "Scripts not found"
+command -v myecho && echo "Scripts installed successfully" || echo "Scripts not found"
 #check if it is work
-command -v os >/dev/null && echo "Alias installed successfully" || echo "! Alias not installed"
+command -v os && echo "Alias installed successfully" || echo "! Alias not installed"
 
 source "$HOME/.$myshell"rc
