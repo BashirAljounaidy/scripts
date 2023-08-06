@@ -13,6 +13,8 @@ fi
 # Add the bin directory to the PATH
 echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
 
+exec myshell
+
 test $PATH == "echo $HOME/Scripts/bin:$PATH" && echo "Successfully added the bin directory to the PATH" || echo "Failed to add the bin directory to the PATH"
 
 
