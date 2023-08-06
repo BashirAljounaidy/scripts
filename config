@@ -81,7 +81,7 @@ remove_all_with_confirmation() {
     echo -n "Are you sure you want to delete all directories and files? (y/n): "
     read answer
 
-    if [[ "$answer" == "n" || "$answer" == "N" || "$1" == "$HOME"]]; then
+    if [[ "$answer" == "n" || "$answer" == "N" || "$1" == "$HOME" ]]; then
         echo "Deletion aborted."
     elif [[ "$answer" == "y" || "$answer" == "Y" ]]; then
         find "$1" -mindepth 1 -delete
