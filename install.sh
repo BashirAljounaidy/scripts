@@ -28,3 +28,5 @@ source "$HOME/.$myshell"rc
 command -v myecho >/dev/null && echo "Scripts installed successfully" || echo "Scripts not found"
 #check if it is work
 command -v os >/dev/null && echo "Alias installed successfully" || echo "! Alias not installed"
+
+source "$HOME/.$myshell"rc
