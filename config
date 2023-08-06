@@ -86,8 +86,6 @@ remove_all_with_confirmation() {
     echo -n "Are you sure you want to delete all directories and files? (y/n): "
     read answer
     fi
-
-
     if [[ "$answer" == "n" || "$answer" == "N" ]]; then
         echo "Deletion aborted."
     elif [[ "$answer" == "y" || "$answer" == "Y" ]]; then
