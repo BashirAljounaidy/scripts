@@ -93,3 +93,6 @@ remove_all_with_confirmation() {
     fi
 }
 alias myname='echo "My name is $USER"'  # Show the current user's username
+
+#exports for containers
+export mongodb="$HOME/Scripts/containers/mongod.yml"
