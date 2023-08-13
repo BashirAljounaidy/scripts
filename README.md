@@ -8,32 +8,13 @@ To start using these scripts, follow these steps:
 
 1. Clone this repository to your local machine.
 
-2. Add the repository's path to your environment variables to easily access the scripts from any location in your terminal.
+2. For added convenience, consider installing these scripts in your home folder to access them globally.
 
 ```bash
-
-export PATH="$PATH:/path/to/your/repo"
+bash ~/Scripts/install.sh
 ```
-
-3. For added convenience, consider installing these scripts in your home folder to access them globally.
-
-```bash
-./install.sh
-```
-
-## List of Scripts
-
-1. `script1.sh`: Description of script 1.
-2. `script2.sh`: Description of script 2.
-3. `script3.sh`: Description of script 3.
 
 ## How to Use
-
-To run any script, simply execute it in your terminal:
-
-```bash
-./script1.sh
-```
 
 Please make sure to read the script's comments and documentation to understand its purpose and usage. Feel free to customize these scripts to suit your specific needs.
 
