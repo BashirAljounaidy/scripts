@@ -2,7 +2,8 @@
 FROM alpine:latest
 
 # Install curl
-RUN apk --no-cache add curl
+RUN apk --no-cache add curl bash
 
 # Command to run when the container starts
-CMD ["sh"]
+
+CMD ["sh", "-c", "while true; do sleep 3600; done"]

@@ -48,5 +48,5 @@ remove_all_with_confirmation() {
 alias myname='echo "My name is $USER"'  # Show the current user's username
 
 #exports for containers
+alias docker-reset="docker ps -q | xargs -r docker stop && docker ps -a -q | xargs -r docker rm && docker volume prune -f"
 export mongodb="$HOME/Scripts/containers/mongod.yml"
-alias docker-reset="docker rm -f $(docker ps -aq)  && docker rmi -f $(docker images -aq)  && docker volume rm $(docker volume ls -q) && docker network rm $(docker network ls -q)"
