@@ -49,4 +49,4 @@ alias myname='echo "My name is $USER"'  # Show the current user's username
 
 #exports for containers
 export mongodb="$HOME/Scripts/containers/mongod.yml"
-alias docker-clean='docker rm -f  && docker rmi -f  && docker volume rm  && docker network rm '
+alias docker-reset="docker rm -f $(docker ps -aq)  && docker rmi -f $(docker images -aq)  && docker volume rm $(docker volume ls -q) && docker network rm $(docker network ls -q)"
