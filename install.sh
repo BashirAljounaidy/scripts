@@ -16,14 +16,14 @@ fi
 
 
 # Make all files in the bin directory executable
-find "$HOME/Scripts/bin" -type f | while read -r file; do
+find "$HOME/scripts/bin" -type f | while read -r file; do
     chmod +x "$file"
 done
 
 # Add the bin directory to the PATH
 source "$HOME/.$myshell"rc
 # edits 
-echo 'export PATH="$HOME/Scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
-echo source "$HOME/Scripts/config" >> "$HOME/.$myshell"rc
+echo 'export PATH="$HOME/scripts/bin:$PATH"' >> "$HOME/.$myshell"rc
+echo source "$HOME/scripts/config" >> "$HOME/.$myshell"rc
 
 exec "$myshell" -l
