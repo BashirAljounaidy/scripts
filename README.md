@@ -1,6 +1,48 @@
 # My Bash Scripts
 
 Welcome to my collection of handy bash scripts that have made my life as a developer easier. These scripts are designed to streamline various tasks, automate repetitive actions, and improve productivity. To make the most of these scripts, consider adding their path to your environment variables and installing them in your home folder.
+## Project installation Explanations :
+install.sh 
+```
+Start
+ |
+ | [Check Shell Type]
+ |  |
+ |  |-> If Zsh
+ |  |    |
+ |  |    |-> Backup zshrc
+ |  |
+ |  |-> If Bash
+ |  |    |
+ |  |    |-> Backup bashrc
+ |  |
+ |  |-> Unsupported Shell
+ |  |    |
+ |  |    |-> Display Error and Exit
+ |
+ | [Make Scripts Executable]
+ |  |
+ |  |-> For each file in "$HOME/scripts/bin"
+ |       |
+ |       |-> Make executable
+ |
+ | [Modify Shell Configuration]
+ |  |
+ |  |-> Source Shell Configuration
+ |  |    |
+ |  |    |-> Add bin directory to PATH
+ |  |    |    |
+ |  |    |    |-> Export PATH
+ |  |    |    |
+ |  |    |    |-> Source config file
+ |
+ | [Execute Shell]
+ |  |
+ |  |-> Launch Shell in Login Mode
+ |
+End
+```
+
 
 ## Getting Started
 
