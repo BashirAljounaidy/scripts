@@ -53,7 +53,7 @@ To start using these scripts, follow these steps:
 2. For added convenience, consider installing these scripts in your home folder to access them globally.
 
 ```bash
-bash ~/Scripts/install.sh
+bash ~/scripts/install.sh
 ```
 
 ## How to Use
